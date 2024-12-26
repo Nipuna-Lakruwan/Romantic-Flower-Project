@@ -1,0 +1,57 @@
+body {
+  background: #131b21;
+}
+body::before {
+  content: "Nipuna Lakruwan";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+  color: rgba(216, 159, 201, 0.15); /* Light pink with transparency */
+  z-index: -1;
+  pointer-events: none; /* Prevents interaction with the watermark */
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #d89fc9; /* Muted pink */
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer p {
+  margin: 0;
+}
+
+#Footer_group_1_,
+[id^=PinkFlowerGroup],
+[id^=BaseGroup] path,
+[id^=LeafGroup] path,
+path[id^=Stroke],
+g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^=Dots],
+[id^=Flourish] {
+  visibility: hidden;
+}
